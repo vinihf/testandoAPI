@@ -5,7 +5,7 @@ app.get('/', function (req, res) {
   res.send('Hello World!');
 });
 
-app.get('/dobro/:n', function (req, res) {
+app.post('/dobro/:n', function (req, res) {
     let result = parseInt(req.params.n)*2;
     obj = {'number':req.params.n,"result":result};
     myObj = JSON.stringify(obj);
